@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevSorteio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <img class="hero__logo" src="assets/dado.png" alt="Dado vermelho com faces numeradas">
+      <h1 class="sr-only">DevSorteio</h1>
+      <p class="hero__subtitle">Sorteie um número personalizado</p>
+    </header>
+
+    <section class="card">
+      <p class="card__title">Sortear um número</p>
+      <form id="raffle-form" class="raffle" novalidate>
+        <div class="raffle__inputs">
+          <label class="sr-only" for="min-value">Valor mínimo</label>
+          <input id="min-value" name="min" type="number" inputmode="numeric" placeholder="entre" required>
+
+          <label class="sr-only" for="max-value">Valor máximo</label>
+          <input id="max-value" name="max" type="number" inputmode="numeric" placeholder="e" required>
+        </div>
+        <p id="error-message" class="message message--error" role="alert" aria-live="polite"></p>
+        <p class="message message--muted">Os limites são inclusivos.</p>
+        <button class="btn" type="submit">Sortear</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content">
+      <button class="modal__close" type="button" aria-label="Fechar" data-close>&times;</button>
+      <img class="modal__icon" src="assets/dado.png" alt="Ícone de dado vermelho">
+      <p class="modal__label">Número sorteado</p>
+      <p id="result-number" class="modal__number">--</p>
+      <button class="btn btn--secondary" type="button" data-close>Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
