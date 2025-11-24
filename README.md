@@ -17,7 +17,17 @@ Aplicação web simples para sortear números dentro de um intervalo definido pe
 - `index.html` – marcação principal do app.
 - `style.css` – estilos e responsividade.
 - `script.js` – lógica de validação, sorteio e controle do pop-up.
-- `assets/dado.png` – ícone do dado usado na interface.
+- `assets/dado1.png` – ícone do dado usado na interface.
+- `assets/Sorteio-desk-sorteio.png`, `assets/Sorteio-desk.png`, `assets/Sorteio-mobile.png` – prévias do layout.
+
+## Pré-visualizações
+Desktop (variações) e mobile:
+![Desktop 1](assets/Sorteio-desk-sorteio.png)
+![Desktop 2](assets/Sorteio-desk.png)
+![Mobile](assets/Sorteio-mobile.png)
+
+## Teste online
+Abra em: https://digitaleducacao.com.br/sorteio/
 
 ## Notas de desenvolvimento
 - O sorteio usa `Math.random()` para gerar um inteiro inclusivo entre os limites informados.

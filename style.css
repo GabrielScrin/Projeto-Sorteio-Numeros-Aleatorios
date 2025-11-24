@@ -41,6 +41,12 @@ body {
   margin: 0 auto 12px;
 }
 
+.hero__title {
+  margin: 0;
+  font-size: clamp(2.6rem, 4vw, 3.4rem);
+  letter-spacing: 0.3px;
+}
+
 .hero__subtitle {
   margin: 8px 0 28px;
   color: var(--muted);
